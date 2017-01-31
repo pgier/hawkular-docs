@@ -20,6 +20,7 @@ docker run --name mwmanager-cassandra -d -e CASSANDRA_START_RPC=true \
            -v /tmp/mydatadir:/opt/apache-cassandra/data:Z \
            registry.access.redhat.com/jboss-mm-7-tech-preview/middleware-manager-datastore:latest
 ---
+
 The "Z" option is necessary on RHEL/Fedora based systems to correctly set the selinux permissions.
 ====
 
